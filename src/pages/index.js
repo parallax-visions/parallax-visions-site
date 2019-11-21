@@ -27,6 +27,7 @@ function IndexPage() {
 
     <Layout>
       <SEO title="Home" />
+      <p class="subheader">Games</p>
       {gameData.map((game) => {
         return <GameCard {...game} />
       })}
