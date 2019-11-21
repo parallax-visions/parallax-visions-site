@@ -10,7 +10,7 @@ function GameCard({title, year, img_path, description, itch_link}) {
       
       <img className="thumbnail" src={`${img_path}`} />
       <p class="description">{description}</p>
-      <a class="learn-more">Learn more</a>
+      <a href={itch_link} class="learn-more">Learn more</a>
     </span>
   )
 }
