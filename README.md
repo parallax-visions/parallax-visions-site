@@ -7,6 +7,7 @@ Here lies the code to power the Parallax Visions website. The site is built with
 ## 🚀 Quick start
 
 2.  **Install Gatsby.**
+    
     Won't get far without our tools installed. 
 
     ```shell
