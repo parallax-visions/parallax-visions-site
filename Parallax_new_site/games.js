@@ -1,3 +1,5 @@
+//This would be a template for added more games to the site
+
 class Game {
     constructor(title, year) {
         this._title = title;
