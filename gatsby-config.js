@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ballkins Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Parallax Visions`,
+    description: `The weirdest games you've never played.`,
+    author: `Parallax Visions`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
