@@ -3,15 +3,19 @@ import React from "react"
 function Header() {
   return (
     <header>
-    <img id="cover_image" src="/parallax_billboard.png" />
+    <div id="header-image" style={{    backgroundImage: '/parallax_billboard.png',
+    backgroundSize: 'contain',
+    backgroundAttachment: 'fixed',}}>
+      <img id="cover_image" src="/parallax_billboard.png" />
+    </div>
       <nav id="navbar">
       <ul class="navigation">
-        <li><a class="tabs" href="/">Games</a></li>
-        <li><a class="tabs" href="/music">Music</a></li>
-        <li><a class="tabs" href="About Us.html">About Us</a></li>
+        <li><a class="tabs" href="#games">Games</a></li>
+        <li><a class="tabs" href="#work">Work</a></li>
+        <li><a class="tabs" href="#contact">Contact</a></li>
       </ul>
       <span id="the_eye"
-        ><a href="home.html"><img id="logo" src="/parallax_logo_new.png"/></a
+        ><a href="/"><img id="logo" src="/parallax_logo_new.png"/></a
       ></span>
 
       <ul class="social-links">

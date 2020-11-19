@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <section className="main">
-        <div id="contentbox">
+        <div style={{backgroundImage: '/topography_black.png', backgroundRepeat: 'repeat'}} id="contentbox">
           {children}
         </div>
         </section>

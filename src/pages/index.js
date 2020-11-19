@@ -1,116 +1,37 @@
 import React from "react"
 
-import GameCard from '../components/GameCard'
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
+import GameList from '../components/GameList'
+import ContactForm from '../components/ContactForm'
 
 function IndexPage() {
-  const gameData= [
-    {
-    title: 'Interference',
-    img_path: '/interference.png',
-    description: 'Scan an abandoned research facility for crucial information while being attacked by an onslaught of cybernetic interlopers. Beware though, their cybernetic shielding can acclimate to your weapons.',
-    itch_link: 'https://parallaxvisions.itch.io/interference',
-    div_id: 'redbox'
-  },
-  {
-    title: 'Museum of Virtual Art II',
-    img_path: '/museum2_image.jpg',
-    description: 'Multiplayer, interactive gallery featuring the artists from New Aesthetic. Featured image by Elena Romenkova.',
-    itch_link: 'https://parallaxvisions.itch.io/museum-of-virtual-art-2',
-    div_id: 'turquoisebox'
-  },
-  {
-    title: 'Kitty Girl Fly',
-    img_path: '/kitty.png',
-    description: 'Kitty Girl Fly features space-bending graphics as you navigate your character through wave after wave of monsters shooting deadly balls of energy.',
-    itch_link: 'https://parallaxvisions.itch.io/kitty-girl',
-    div_id: 'pinkbox'
-  },
-  {
-    title: 'Press F to Pay Respects',
-    img_path: '/press_f.jpg',
-    description: 'This is an experience about honoring God and Country.',
-    itch_link: 'ttps://parallaxvisions.itch.io/press-f-to-pay-respects',
-    div_id: 'greenbox'
-  },
-  {
-    title: 'Quavers',
-    img_path: '/quavers.png',
-    description: ' It is the beginning of time. The universe exists as one infinitesimally small point, manifested as a platforming puzzle. During this fraction of a nanosecond, sound waves have an incredible effect on the nature of reality. Using the power of music, you must help guide a colony of quavers to their ascension, planting the seeds of intelligent life in the universe.',
-    itch_link: 'https://parallaxvisions.itch.io/quavers',
-    div_id: 'greybox'
-  },
-  {
-    title: 'Museum of Virtual Art',
-    img_path: '/mova.jpg',
-    description: 'A digital museum featuring artists from New Aesthetic.',
-    itch_link: 'https://parallaxvisions.itch.io/mova',
-    div_id: 'brownbox'
-  },
-  {
-    title: 'Strung Out in Heaven\'s High',
-    img_path: '/strung.png',
-    description: 'Do you remember a cat that’s been in such an early game? We know that the cat was sent to space. Connected, monitorized, trapped in a tin can. A cat sent to die for the sake of science. High on catnip his brain envisioned adventures of space discovery, intergalactic battles, heroes and glory.',
-    itch_link: 'https://parallaxvisions.itch.io/strung-out',
-    div_id: 'rosebox'
-  },
-  {
-    title: 'Calm',
-    img_path: '/calm.jpg',
-    description: 'Based on the theme “Ritual.” Calm is a meditative ceremony that is performed to induce a state of zen.',
-    itch_link: 'https://parallaxvisions.itch.io/calm',
-    div_id: 'purplebox'
-  },
-  {
-    title: 'Colosseum Stellarum',
-    img_path: '/colosseum.jpg',
-    description: 'Two player fighting game where the victor becomes Celestial Champion and fights for the gods.',
-    itch_link: "https://parallaxvisions.itch.io/colosseum-stellarum",
-    div_id: 'blackbox'
-  },
-  {
-    title: 'Depression Simulator',
-    img_path: '/depression_sim.jpg',
-    description: 'Depression Simulator is an interactive experience made to abstract the mindset of depression. Void of story and direction, explore an unfamiliar dimension and discover the reality of the world around you.',
-    itch_link: 'https://parallaxvisions.itch.io/depression-simulator',
-    div_id: 'bluebox'
-  },
-  {
-    title: 'Last Man Alive',
-    img_path: '/last_man2.jpg',
-    description: 'Last Man Alive is the story of the last human’s last moments. Earth is devastated by nuclear holocaust, wiping out all life on the planet. You are Jerry Jerry Lewis, an astronaut aboard the Second International Space Station. Walk around the station and choose how to spend your last fifteen minutes. There is no way to escape your certain demise. There are many ways to spend your time, but remember that every action takes time. Spend it wisely. It’s impossible to do everything.',
-    itch_link: 'https://parallaxvisions.itch.io/last-man-alive',
-    div_id: 'orangebox'
-  },
-  {
-    title: 'Rainbow Runner',
-    img_path: '/rainbow_runner.jpg',
-    description: 'Rainbow Runner is a psychedelic first-person platformer. Taking place in the City of Panchromia, the game tells the tale of the systematic oppression of a disparate group of species by the city\’s ruling regime.',
-    itch_link: 'https://parallaxvisions.itch.io/rainbow-runner',
-    div_id: 'crimsonbox'
-  },
-  {
-    title: 'Triscape',
-    img_path: '/tripscape.png',
-    description: 'Tripscape is Parallax Vision’s first game, made with the theme of psychedelic exploration. Void of story and direction, explore an unfamiliar dimension and discover the reality of the world around you.',
-    itch_link: 'https://parallaxvisions.itch.io/tripscape-',
-    div_id: 'olivebox'
-  },
-  
-  ]
   return (
-
     <Layout>
       <SEO title="Home" />
-      <div class="redbox">
-        <p className="subheader">GAMES</p>
-      </div>
-      {gameData.map((game, index) => {
-        console.log(index)
-        return <GameCard key={index} index={index} {...game} />
-      })}
+      <section className="section">
+        <div style={{maxWidth: 960, margin: 'auto', fontSize: 28, paddingLeft: 10, paddingRight: 10}}>
+          <p>Parallax Visions is an independent game development studio based in New Orleans, Louisiana. </p>
+          <p>We specialize in creating games that are surreal and psychedelic.</p>
+          <p>Parallax Visions is also the host of the New Orleans Global Game Jam.</p>
+          <GameList />
+        </div>
+      </section>
+      <section id="work" className="section-alternate">
+        <div style={{maxWidth: 960, margin: 'auto', fontSize: 28}}>
+          <p>Parallax Visions is a creative agency based in New Orleans, Louisiana. </p>
+          <p>We provide services for businesses looking to drive engagement and utilize VR/AR technology.</p>
+          <p>Here are some services we've provided in the past to get you thinking:</p>
+          <ul className="service-list">
+            <li>Custom VR Training Platforms</li>
+            <li>Custom Software Development</li>
+            <li>360 Stereoscopic Video Production</li>
+            <li>Real-Time Audio-Visual Projections</li>
+          </ul>
+          <ContactForm />
+        </div>
+      </section>
     </Layout>
   )
 }

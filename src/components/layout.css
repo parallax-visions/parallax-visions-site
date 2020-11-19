@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Rubik&display=swap');
+
 html,
 body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    
+    font-family: 'Karla';
    
 }
 body::-webkit-scrollbar {
@@ -22,25 +24,52 @@ body::-webkit-scrollbar-thumb {
   border-radius: 25%;
 }
 .main {
-    overflow-x: hidden;
+
 }
 
+#contentbox {
+  background-image: url("/topography.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
 
+.section, .section-alternate {
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 20px 0;
+}
 
+.section {
+  color: black;
+  background-image: url("/topography.png");
+}
 
+.section-alternate {
+  color: white;
+  background-image: url("/topography_black.png");
+}
 
+.service-list {
+  list-style: none;
+  margin-top: 0;
+}
 
+.service-list > li {
+  font-weight: bold;
+  padding-top: 10px;
+}
 
-
-
-
+#header-image {
+  background-image: url("/parallax_billboard.png");
+  background-size: 'contain';
+  background-attachment: 'fixed';
+  background-repeat: 'no-repeat';
+}
     
 #cover_image {
-    position: relative;
     width: 100%;
     height: auto;
-    margin: none;
-    overflow: hidden;
+    opacity: 0;
 }
 
 #navbar {
@@ -166,7 +195,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: indianred;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -180,7 +209,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: turquoise;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -194,7 +223,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: palevioletred;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -208,7 +237,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: lightgreen;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -222,7 +251,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: grey;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -236,7 +265,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: burlywood;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -250,7 +279,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: lightpink;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -264,7 +293,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: purple;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -278,7 +307,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: black;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -292,7 +321,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: darkblue;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -306,7 +335,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: hsl(30, 100%, 50%);
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -320,7 +349,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: crimson;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -334,7 +363,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: right;
     background-color: olivedrab;
     margin: 0 auto;
-    width: 100%;
+
     height: auto;
     z-index: 0;
     overflow: hidden;
@@ -391,7 +420,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-    font: 40px  "Franklin Gothic Medium", Roboto, Verdana, Arial, sans-serif;
+    font: 40px  "Rubik", Roboto, Verdana, Arial, sans-serif;
     color: black;
     position: relative;
     margin: 5%;
@@ -401,12 +430,9 @@ h1 {
 }
 
 h2 {
-    font: 18px "Franklin Gothic Medium", Roboto, Verdana, Arial, sans-serif;
+    font: 20px "Rubik", Roboto, Verdana, Arial, sans-serif;
     color: black;
     position: relative;
-    margin: 0 20% 5% 20%;
-    font-weight: lighter;
-    font-style: italic;
     text-align: center;
     z-index: 1;
 }
